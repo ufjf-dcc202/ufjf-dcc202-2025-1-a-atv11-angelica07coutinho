@@ -11,3 +11,9 @@ export function limpaLista() {
 export function adicionaNaLista(item) {
     lista.push(item);
 }
+
+export function removeDaLista(indice) {
+    if (indice >= 0 && indice < lista.length) {
+        lista.splice(indice, 1);
+    }
+}
